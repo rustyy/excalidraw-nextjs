@@ -9,6 +9,8 @@
     "prebuild": "node scripts/copy-excalidraw-fonts.mjs",
     "build": "next build",
     "start": "next start",
+    "docker:build": "docker build -t excalidraw-nextjs .",
+    "docker:run": "docker run --rm -p 3000:3000 excalidraw-nextjs",
     "lint": "eslint"
   },
   "dependencies": {
